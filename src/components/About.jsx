@@ -16,18 +16,18 @@ const beneficiosIndividual = [
 
 const equipe = [
   {
-    nome: "Carlos Mendes",
+    nome: "Eladio Gomes",
     cargo: "Fundador & CEO",
     imagem: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&q=80",
   },
   {
-    nome: "Ana Souza",
+    nome: "Manuella Gomes",
     cargo: "Diretora Operacional",
     imagem: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&q=80",
   },
   {
-    nome: "Roberto Lima",
-    cargo: "Gerente de Logística",
+    nome: "Colaboradores",
+    cargo: "Montadores",
     imagem: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&q=80",
   },
 ];

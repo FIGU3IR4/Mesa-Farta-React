@@ -1,9 +1,8 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { X, MapPin, Send, ChevronRight } from "lucide-react";
 import { useCart } from "../context/CartContext";
 
 const WHATSAPP_NUMBER = "5581999999999";
-
 const initialForm = { rua: "", numero: "", bairro: "", referencia: "" };
 
 export default function CheckoutModal() {
@@ -19,6 +18,21 @@ export default function CheckoutModal() {
 
   const [form, setForm] = useState(initialForm);
   const [erros, setErros] = useState({});
+  const [timer, setTimer] = useState(300); // 300 segundos = 5 minutos
+
+  useEffect(() => {
+    if (!modalAberto) return;
+    const interval = setInterval(() => {
+      setTimer((prev) => (prev > 0 ? prev - 1 : 0));
+    }, 1000);
+    return () => clearInterval(interval);
+  }, [modalAberto]);
+
+  const formatTime = (seconds) => {
+    const mins = Math.floor(seconds / 60);
+    const secs = seconds % 60;
+    return `${mins}:${secs.toString().padStart(2, '0')}`;
+  };
 
   if (!modalAberto) return null;
 
@@ -34,22 +48,21 @@ export default function CheckoutModal() {
   }
 
   function validar() {
-    const novosErros = {};
-    if (!form.rua.trim()) novosErros.rua = "Informe a rua";
-    if (!form.numero.trim()) novosErros.numero = "Informe o número";
-    if (!form.bairro.trim()) novosErros.bairro = "Informe o bairro";
-    setErros(novosErros);
-    return Object.keys(novosErros).length === 0;
+    // Validação removida para tornar o endereço opcional
+    return true;
   }
 
   function montarMensagem() {
-    const endereco = [
-      `${form.rua}, ${form.numero}`,
-      `Bairro: ${form.bairro}`,
-      form.referencia ? `Ponto de referência: ${form.referencia}` : null,
-    ]
-      .filter(Boolean)
-      .join("\n");
+    // Só monta a string de endereço se houver dados preenchidos
+    const temDadosEndereco = form.rua || form.numero || form.bairro;
+    
+    const endereco = temDadosEndereco 
+      ? [
+          `${form.rua || 'S/N'}, ${form.numero || 'S/N'}`,
+          form.bairro ? `Bairro: ${form.bairro}` : null,
+          form.referencia ? `Ponto de referência: ${form.referencia}` : null,
+        ].filter(Boolean).join("\n")
+      : "Retirada ou endereço a combinar";
 
     if (isPronta) {
       const itensStr = cestaSelecionada.itens
@@ -95,7 +108,7 @@ export default function CheckoutModal() {
         <div className="sticky top-0 bg-white border-b border-gray-100 px-6 py-4 flex items-center justify-between sm:rounded-t-2xl">
           <div>
             <h2 className="font-bold text-gray-800 text-lg">Finalizar Pedido</h2>
-            <p className="text-gray-500 text-sm">Preencha o endereço de entrega</p>
+            <p className="text-gray-500 text-sm">Preencha o endereço (opcional)</p>
           </div>
           <button
             onClick={fecharModal}
@@ -128,12 +141,28 @@ export default function CheckoutModal() {
               </div>
             </>
           )}
-          <div className="mt-3 pt-3 border-t border-green-200 flex justify-between items-center">
-            <span className="text-sm font-medium text-gray-600">Total:</span>
-            <span className="text-xl font-extrabold text-green-700">
-              R${" "}
-              {total?.toLocaleString("pt-BR", { minimumFractionDigits: 2 })}
-            </span>
+
+          <div className="mt-4 bg-orange-50 border border-orange-200 rounded-xl p-3 flex items-center justify-between">
+            <div>
+              <p className="text-orange-800 text-[10px] font-bold uppercase tracking-wider">🔥 Oferta Especial</p>
+              <p className="text-gray-600 text-[10px]">O desconto de 10% expira em:</p>
+            </div>
+            <div className="bg-orange-500 text-white px-3 py-1 rounded-lg font-mono font-bold text-lg animate-pulse">
+              {formatTime(timer)}
+            </div>
+          </div>
+
+          <div className="mt-3 pt-3 border-t border-green-200 flex justify-between items-end">
+            <span className="text-sm font-medium text-gray-600 mb-1">Total:</span>
+            <div className="text-right">
+              <p className="text-xs text-gray-400 line-through">
+                R$ {(total / 0.9).toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
+              </p>
+              <span className="text-xl font-extrabold text-green-700">
+                R${" "}
+                {total?.toLocaleString("pt-BR", { minimumFractionDigits: 2 })}
+              </span>
+            </div>
           </div>
         </div>
 
@@ -146,7 +175,7 @@ export default function CheckoutModal() {
           <div className="space-y-4">
             <div>
               <label className="block text-sm font-semibold text-gray-700 mb-1.5">
-                Rua / Avenida *
+                Rua / Avenida
               </label>
               <input
                 type="text"
@@ -154,21 +183,14 @@ export default function CheckoutModal() {
                 value={form.rua}
                 onChange={handleChange}
                 placeholder="Ex: Rua das Flores"
-                className={`w-full px-4 py-3 rounded-xl border text-sm bg-white transition-all outline-none focus:ring-2 focus:ring-green-500/30 ${
-                  erros.rua
-                    ? "border-red-300 bg-red-50"
-                    : "border-gray-200 focus:border-green-400"
-                }`}
+                className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-green-400 text-sm bg-white transition-all outline-none focus:ring-2 focus:ring-green-500/30"
               />
-              {erros.rua && (
-                <p className="text-red-500 text-xs mt-1">{erros.rua}</p>
-              )}
             </div>
 
             <div className="grid grid-cols-2 gap-3">
               <div>
                 <label className="block text-sm font-semibold text-gray-700 mb-1.5">
-                  Número *
+                  Número
                 </label>
                 <input
                   type="text"
@@ -176,19 +198,12 @@ export default function CheckoutModal() {
                   value={form.numero}
                   onChange={handleChange}
                   placeholder="Ex: 123"
-                  className={`w-full px-4 py-3 rounded-xl border text-sm bg-white transition-all outline-none focus:ring-2 focus:ring-green-500/30 ${
-                    erros.numero
-                      ? "border-red-300 bg-red-50"
-                      : "border-gray-200 focus:border-green-400"
-                  }`}
+                  className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-green-400 text-sm bg-white transition-all outline-none focus:ring-2 focus:ring-green-500/30"
                 />
-                {erros.numero && (
-                  <p className="text-red-500 text-xs mt-1">{erros.numero}</p>
-                )}
               </div>
               <div>
                 <label className="block text-sm font-semibold text-gray-700 mb-1.5">
-                  Bairro *
+                  Bairro
                 </label>
                 <input
                   type="text"
@@ -196,15 +211,8 @@ export default function CheckoutModal() {
                   value={form.bairro}
                   onChange={handleChange}
                   placeholder="Ex: Centro"
-                  className={`w-full px-4 py-3 rounded-xl border text-sm bg-white transition-all outline-none focus:ring-2 focus:ring-green-500/30 ${
-                    erros.bairro
-                      ? "border-red-300 bg-red-50"
-                      : "border-gray-200 focus:border-green-400"
-                  }`}
+                  className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-green-400 text-sm bg-white transition-all outline-none focus:ring-2 focus:ring-green-500/30"
                 />
-                {erros.bairro && (
-                  <p className="text-red-500 text-xs mt-1">{erros.bairro}</p>
-                )}
               </div>
             </div>
 

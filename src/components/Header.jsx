@@ -20,7 +20,7 @@ export default function Header() {
             </div>
             <div className="leading-tight">
               <span className="block font-bold text-green-800 text-base tracking-tight">
-                Cesta Basica Mesa farta
+                Cestão Mesa farta
               </span>
               <span className="block text-xs text-green-500 font-medium -mt-0.5">
                 Nutrição com carinho

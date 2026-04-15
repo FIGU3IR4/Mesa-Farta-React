@@ -155,7 +155,7 @@ export default function CustomBasket() {
                     <span className="text-green-100 font-semibold">
                       Valor Total Previsto:
                     </span>
-                    <span className="text-2xl font-extrabold text-white">
+                    <span className="text-2xl font-extrabold text-white blur-sm select-none">
                       R${" "}
                       {total.toLocaleString("pt-BR", {
                         minimumFractionDigits: 2,

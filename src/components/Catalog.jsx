@@ -16,7 +16,7 @@ function CestaCard({ cesta }) {
         <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
         <div className="absolute bottom-3 left-3">
           <span className="bg-white/95 text-green-700 font-bold text-xs px-3 py-1 rounded-full">
-            {cesta.itens.length} itens inclusos
+            {cesta.quantitens} itens inclusos
           </span>
         </div>
       </div>
