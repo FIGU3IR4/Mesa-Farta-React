@@ -2,7 +2,7 @@ import { useState } from "react";
 import { X, MapPin, Send, ChevronRight } from "lucide-react";
 import { useCart } from "../context/CartContext";
 
-const WHATSAPP_NUMBER = "5581999999999";
+const WHATSAPP_NUMBER = "5581987731779";
 const initialForm = { rua: "", numero: "", bairro: "", referencia: "" };
 
 export default function CheckoutModal() {
@@ -54,7 +54,7 @@ export default function CheckoutModal() {
         .map((item) => `  • ${item}`)
         .join("\n");
       return (
-        `Olá! Gostaria de fazer um pedido na Cesta & Vida! 🛒\n\n` +
+        `Olá! Gostaria de fazer um pedido na Cestão Mesa Farta! 🛒\n\n` +
         `*📦 PEDIDO:* ${cestaSelecionada.nome}\n\n` +
         `*Itens inclusos:*\n${itensStr}\n\n` +
         `*💰 Valor Total:* R$ ${total?.toLocaleString("pt-BR", { minimumFractionDigits: 2 })}\n\n` +
@@ -65,7 +65,7 @@ export default function CheckoutModal() {
         .map((item) => `  • ${item.nome} (x${item.quantidade})`)
         .join("\n");
       return (
-        `Olá! Gostaria de fazer um pedido na Cesta & Vida! 🛒\n\n` +
+        `Olá! Gostaria de fazer um pedido na Cestão Mesa Farta! 🛒\n\n` +
         `*📦 CESTA PERSONALIZADA:*\n${itensStr}\n\n` +
         `*💰 Valor Total Previsto:* R$ ${total.toLocaleString("pt-BR", { minimumFractionDigits: 2 })}\n\n` +
         `*📍 Endereço de Entrega:*\n${endereco}`
