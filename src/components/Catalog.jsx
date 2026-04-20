@@ -1,21 +1,27 @@
-import { ShoppingCart, CheckCircle2 } from "lucide-react";
+import React, { useState } from "react";
+import { ShoppingCart, CheckCircle2, ChevronDown, ChevronUp } from "lucide-react";
 import { cestasprontas } from "../data/mockData";
 import { useCart } from "../context/CartContext";
 
 function CestaCard({ cesta }) {
   const { abrirCheckoutCestaPronta } = useCart();
+  // Estado para controlar se os itens estão visíveis ou não
+  const [mostrarItens, setMostrarItens] = useState(false);
 
   return (
     <div className="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col">
-      <div className="relative overflow-hidden h-48">
+      
+      {/* O tamanho h-64 foi mantido, mas o fundo branco garante que espaços vazios fiquem bonitos */}
+      <div className="relative overflow-hidden h-64 bg-white flex items-center justify-center">
         <img
           src={cesta.imagem}
           alt={cesta.nome}
-          className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+          // Trocamos "object-cover" por "object-contain" e adicionamos "p-4" (padding) para afastar a imagem das bordas
+          className="w-full h-full object-contain p-4 hover:scale-105 transition-transform duration-500"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none" />
         <div className="absolute bottom-3 left-3">
-          <span className="bg-white/95 text-green-700 font-bold text-xs px-3 py-1 rounded-full">
+          <span className="bg-white/95 text-green-700 font-bold text-xs px-3 py-1 rounded-full shadow-sm">
             {cesta.quantitens} itens inclusos
           </span>
         </div>
@@ -31,20 +37,35 @@ function CestaCard({ cesta }) {
         </p>
 
         <div className="flex-1 mb-5">
-          <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2">
-            O que está incluso:
-          </p>
-          <ul className="space-y-1.5">
-            {cesta.itens.map((item, i) => (
-              <li key={i} className="flex items-start gap-2 text-sm text-gray-600">
-                <CheckCircle2
-                  size={14}
-                  className="text-green-500 mt-0.5 shrink-0"
-                />
-                {item}
-              </li>
-            ))}
-          </ul>
+          {/* Botão para clicar e mostrar/ocultar os itens */}
+          <button 
+            onClick={() => setMostrarItens(!mostrarItens)}
+            className="w-full flex items-center justify-between text-left focus:outline-none mb-2 hover:bg-gray-50 p-1 -ml-1 rounded transition-colors"
+          >
+            <span className="text-xs font-semibold text-gray-500 uppercase tracking-wider">
+              O que está incluso
+            </span>
+            {mostrarItens ? (
+              <ChevronUp size={16} className="text-gray-500" />
+            ) : (
+              <ChevronDown size={16} className="text-gray-500" />
+            )}
+          </button>
+
+          {/* Só mostra a lista se mostrarItens for true */}
+          {mostrarItens && (
+            <ul className="space-y-1.5 mt-3 transition-all duration-300">
+              {cesta.itens.map((item, i) => (
+                <li key={i} className="flex items-start gap-2 text-sm text-gray-600">
+                  <CheckCircle2
+                    size={14}
+                    className="text-green-500 mt-0.5 shrink-0"
+                  />
+                  {item}
+                </li>
+              ))}
+            </ul>
+          )}
         </div>
 
         <button

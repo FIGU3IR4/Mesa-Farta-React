@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { X, MapPin, Send, ChevronRight } from "lucide-react";
 import { useCart } from "../context/CartContext";
 
@@ -18,21 +18,6 @@ export default function CheckoutModal() {
 
   const [form, setForm] = useState(initialForm);
   const [erros, setErros] = useState({});
-  const [timer, setTimer] = useState(300); // 300 segundos = 5 minutos
-
-  useEffect(() => {
-    if (!modalAberto) return;
-    const interval = setInterval(() => {
-      setTimer((prev) => (prev > 0 ? prev - 1 : 0));
-    }, 1000);
-    return () => clearInterval(interval);
-  }, [modalAberto]);
-
-  const formatTime = (seconds) => {
-    const mins = Math.floor(seconds / 60);
-    const secs = seconds % 60;
-    return `${mins}:${secs.toString().padStart(2, '0')}`;
-  };
 
   if (!modalAberto) return null;
 
@@ -142,25 +127,11 @@ export default function CheckoutModal() {
             </>
           )}
 
-          <div className="mt-4 bg-orange-50 border border-orange-200 rounded-xl p-3 flex items-center justify-between">
-            <div>
-              <p className="text-orange-800 text-[10px] font-bold uppercase tracking-wider">🔥 Oferta Especial</p>
-              <p className="text-gray-600 text-[10px]">O desconto de 10% expira em:</p>
-            </div>
-            <div className="bg-orange-500 text-white px-3 py-1 rounded-lg font-mono font-bold text-lg animate-pulse">
-              {formatTime(timer)}
-            </div>
-          </div>
-
           <div className="mt-3 pt-3 border-t border-green-200 flex justify-between items-end">
             <span className="text-sm font-medium text-gray-600 mb-1">Total:</span>
             <div className="text-right">
-              <p className="text-xs text-gray-400 line-through">
-                R$ {(total / 0.9).toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
-              </p>
               <span className="text-xl font-extrabold text-green-700">
-                R${" "}
-                {total?.toLocaleString("pt-BR", { minimumFractionDigits: 2 })}
+                R$ {total?.toLocaleString("pt-BR", { minimumFractionDigits: 2 })}
               </span>
             </div>
           </div>

@@ -4,7 +4,7 @@ export const cestasprontas = [
     id: 1,
     nome: "Cesta Econômica (16 Itens)",
     preco: 69.90,
-    imagem: "url_da_imagem_1",
+    imagem: "https://res.cloudinary.com/daxnmbaov/image/upload/v1776642477/Gemini_Generated_Image_ohwmohwmohwmohwm_ihvwd3.png",
     quantitens: 16,
     itens: [
       "1 Feijão kg",
@@ -26,7 +26,7 @@ export const cestasprontas = [
     id: 2,
     nome: "Cesta Padrão (18 Itens - 1Kg) ",
     preco: 85.00,
-    imagem: "url_da_imagem_2",
+    imagem: "https://res.cloudinary.com/daxnmbaov/image/upload/v1776642435/Gemini_Generated_Image_flo4ndflo4ndflo4_fjk8rj.png",
     quantitens: 18,
     itens: [
       "1 Feijão kg",
@@ -50,7 +50,7 @@ export const cestasprontas = [
     id: 3,
     nome: "Cesta Família (23 Itens - 2kg)",
     preco: 115.00,
-    imagem: "url_da_imagem_3",
+    imagem: "https://res.cloudinary.com/daxnmbaov/image/upload/v1776644469/Gemini_Generated_Image_w1rbcow1rbcow1rb_rand1y.png",
     quantitens: 23,
     itens: [
       "2 Feijão kg",
@@ -74,7 +74,7 @@ export const cestasprontas = [
     id: 4,
     nome: "Cesta Essencial (23 Itens - 3kg)",
     preco: 149.90,
-    imagem: "url_da_imagem_4",
+    imagem: "https://res.cloudinary.com/daxnmbaov/image/upload/v1776644748/Gemini_Generated_Image_eh39tdeh39tdeh39_aw43tj.png",
     quantitens: 23,
     itens: [
       "1 Feijão Macassa kg",
@@ -98,7 +98,7 @@ export const cestasprontas = [
     id: 5,
     nome: "Cesta Especial  (45 Itens - 3kg)",
     preco: 175.00,
-    imagem: "url_da_imagem_5",
+    imagem: "https://res.cloudinary.com/daxnmbaov/image/upload/v1776645309/Gemini_Generated_Image_mwy84vmwy84vmwy8_nbmldl.png",
     quantitens: 45,
     itens: [
       "15 und. Ovos",
@@ -127,7 +127,7 @@ export const cestasprontas = [
   id: 6, 
   nome: "Cestão Mesa Farta (60 Und.)",
   preco: 249.90, // Valor fictício, ajuste conforme necessário
-  imagem: "URL_DA_SUA_IMAGEM",
+  imagem: "https://res.cloudinary.com/daxnmbaov/image/upload/v1776645612/Gemini_Generated_Image_r8fsttr8fsttr8fs_aystdo.png",
   quantitens: 60,
   itens: [
     "15 und. ovos",
@@ -162,7 +162,7 @@ export const cestasprontas = [
   id: 7,
   nome: "Cesta Mesa Farta (59 Und. 4kg)",
   preco: 259.90, // Valor fictício, ajuste conforme seu preço real
-  imagem: "URL_DA_SUA_IMAGEM",
+  imagem: "https://res.cloudinary.com/daxnmbaov/image/upload/v1776646034/Gemini_Generated_Image_k7s2xpk7s2xpk7s2_faxnyf.png",
   quantitens: 59,
   itens: [
     "15 und. ovos",
@@ -197,7 +197,7 @@ export const cestasprontas = [
   id: 8,
   nome: "Cesta Mesa Farta (65 Und. 4kg)",
   preco: 289.90, // Valor fictício, ajuste conforme seu preço real
-  imagem: "URL_DA_SUA_IMAGEM",
+  imagem: "https://res.cloudinary.com/daxnmbaov/image/upload/v1776646034/Gemini_Generated_Image_k7s2xpk7s2xpk7s2_faxnyf.png",
   quantitens: 65,
   itens: [
     "15 und. ovos",
@@ -231,7 +231,83 @@ export const cestasprontas = [
     "1 detergente 500ml",
     "1 esponja de aço 44g"
   ],
-}
+},
+
+{
+  id: 14,
+  nome: "Cesta Mesa Farta (71 Und. 5kg)",
+  preco: 289.90, // Valor fictício, ajuste conforme seu preço real
+  imagem: "https://res.cloudinary.com/daxnmbaov/image/upload/v1776646410/Gemini_Generated_Image_xelll9xelll9xell_bdk1mg.png",
+  quantitens: 65,
+  itens: [
+  
+    "1 esponja de aço 44g"
+  ],
+},
+
+{
+    id: 9,
+    nome: "Cesta de (65 und. 5kg )",
+    preco: 69.90,
+    imagem: "https://res.cloudinary.com/daxnmbaov/image/upload/v1776280243/Gemini_Generated_Image_k97xg9k97xg9k97x_h19smz.png",
+    quantitens: 16,
+    itens: [
+      "1 Feijão kg",
+      
+    ],
+  },
+
+  {
+    id: 10,
+    nome: "Cesta de (73 und. 6kg )",
+    preco: 69.90,
+    imagem: "https://res.cloudinary.com/daxnmbaov/image/upload/v1776643618/Gemini_Generated_Image_ws8u0yws8u0yws8u_hk4fka.png",
+    quantitens: 16,
+    itens: [
+      "1 Feijão kg",
+      
+    ],
+  },
+
+    {
+    id: 11,
+    nome: "Cesta de (73 und. 7kg )",
+    preco: 69.90,
+    imagem: "https://res.cloudinary.com/daxnmbaov/image/upload/v1776640344/Gemini_Generated_Image_8swc9j8swc9j8swc_pwggpw.png",
+    quantitens: 16,
+    itens: [
+      "1 Feijão kg",
+      
+    ],
+  },
+
+      {
+    id: 12,
+    nome: "Cesta de (94 und. 8kg )",
+    preco: 69.90,
+    imagem: "https://res.cloudinary.com/daxnmbaov/image/upload/v1776640856/Gemini_Generated_Image_oa22ygoa22ygoa22_i5iq1y.png",
+    quantitens: 16,
+    itens: [
+      "1 Feijão kg",
+      
+    ],
+  },
+
+        {
+    id: 13,
+    nome: "Cesta de (100 und. 8kg )",
+    preco: 69.90,
+    imagem: "https://res.cloudinary.com/daxnmbaov/image/upload/v1776641116/Gemini_Generated_Image_xfbdetxfbdetxfbd_agnwy7.png",
+    quantitens: 16,
+    itens: [
+      "1 Feijão kg",
+      
+    ],
+  },
+  
+  
+
+
 ];
 
 export const itensIndividuais = [
