@@ -66,28 +66,18 @@ export default function Hero() {
           <div className="hidden md:block relative">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white/20">
               <img
-                src="https://images.unsplash.com/photo-1542838132-92c53300491e?w=800&q=80"
+                src="https://res.cloudinary.com/daxnmbaov/image/upload/v1776854353/imagemdestauqe_mdgtzb.jpg"
                 alt="Cesta básica repleta de alimentos"
-                className="w-full h-96 object-cover"
+                className="w-full h-98 object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-green-900/50 to-transparent" />
               <div className="absolute bottom-4 left-4 right-4">
-                <div className="bg-white/95 backdrop-blur rounded-xl p-4 shadow-lg">
-                  <p className="text-xs text-gray-500 font-medium mb-1">
-                    Cesta mais popular
-                  </p>
-                  <p className="text-green-800 font-bold text-lg">
-                    Cesta Família
-                  </p>
-                  <p className="text-orange-600 font-extrabold text-2xl">
-                    R$ 159,90
-                  </p>
-                </div>
+            
               </div>
             </div>
 
             <div className="absolute -top-4 -right-4 bg-orange-500 text-white font-bold text-sm px-4 py-2 rounded-full shadow-lg rotate-6">
-              Frete grátis acima de R$600
+             Combine sua entrega
             </div>
           </div>
         </div>

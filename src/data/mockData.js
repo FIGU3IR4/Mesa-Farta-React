@@ -2,8 +2,8 @@ export const cestasprontas = [
 
   {
     id: 1,
-    nome: "Cesta Econômica (16 Itens)",
-    preco: 69.90,
+    nome: "Cesta Econômica (16 Unidades - 1Kg)",
+    preco: 55.00,
     imagem: "https://res.cloudinary.com/daxnmbaov/image/upload/v1776642477/Gemini_Generated_Image_ohwmohwmohwmohwm_ihvwd3.png",
     quantitens: 16,
     itens: [
@@ -24,8 +24,8 @@ export const cestasprontas = [
   },
   {
     id: 2,
-    nome: "Cesta Padrão (18 Itens - 1Kg) ",
-    preco: 85.00,
+    nome: "Cesta Padrão (18 Unidades - 1Kg) ",
+    preco: 65.00,
     imagem: "https://res.cloudinary.com/daxnmbaov/image/upload/v1776642435/Gemini_Generated_Image_flo4ndflo4ndflo4_fjk8rj.png",
     quantitens: 18,
     itens: [
@@ -48,8 +48,8 @@ export const cestasprontas = [
   },
   {
     id: 3,
-    nome: "Cesta Família (23 Itens - 2kg)",
-    preco: 115.00,
+    nome: "Cesta Família (23 Unidades - 2kg)",
+    preco: 90.00,
     imagem: "https://res.cloudinary.com/daxnmbaov/image/upload/v1776644469/Gemini_Generated_Image_w1rbcow1rbcow1rb_rand1y.png",
     quantitens: 23,
     itens: [
@@ -72,8 +72,8 @@ export const cestasprontas = [
   },
   {
     id: 4,
-    nome: "Cesta Essencial (23 Itens - 3kg)",
-    preco: 149.90,
+    nome: "Cesta Essencial (23 Unidades - 3kg)",
+    preco: 120.00,
     imagem: "https://res.cloudinary.com/daxnmbaov/image/upload/v1776644748/Gemini_Generated_Image_eh39tdeh39tdeh39_aw43tj.png",
     quantitens: 23,
     itens: [
@@ -96,8 +96,8 @@ export const cestasprontas = [
   },
   {
     id: 5,
-    nome: "Cesta Especial  (45 Itens - 3kg)",
-    preco: 175.00,
+    nome: "Cesta Especial  (45 Unidades - 3kg)",
+    preco: 130.00,
     imagem: "https://res.cloudinary.com/daxnmbaov/image/upload/v1776645309/Gemini_Generated_Image_mwy84vmwy84vmwy8_nbmldl.png",
     quantitens: 45,
     itens: [
@@ -125,8 +125,8 @@ export const cestasprontas = [
   
 {
   id: 6, 
-  nome: "Cestão Mesa Farta (60 Und.)",
-  preco: 249.90, // Valor fictício, ajuste conforme necessário
+  nome: "Cestão Mesa Farta (60 Unidades.)",
+  preco: 185.00, // Valor fictício, ajuste conforme necessário
   imagem: "https://res.cloudinary.com/daxnmbaov/image/upload/v1776645612/Gemini_Generated_Image_r8fsttr8fsttr8fs_aystdo.png",
   quantitens: 60,
   itens: [
@@ -160,8 +160,8 @@ export const cestasprontas = [
 },
 {
   id: 7,
-  nome: "Cesta Mesa Farta (59 Und. 4kg)",
-  preco: 259.90, // Valor fictício, ajuste conforme seu preço real
+  nome: "Cesta Mesa Farta (59 Unidades. 4kg)",
+  preco: 200.00, // Valor fictício, ajuste conforme seu preço real
   imagem: "https://res.cloudinary.com/daxnmbaov/image/upload/v1776646034/Gemini_Generated_Image_k7s2xpk7s2xpk7s2_faxnyf.png",
   quantitens: 59,
   itens: [
@@ -195,8 +195,8 @@ export const cestasprontas = [
 },
 {
   id: 8,
-  nome: "Cesta Mesa Farta (65 Und. 4kg)",
-  preco: 289.90, // Valor fictício, ajuste conforme seu preço real
+  nome: "Cesta Mesa Farta (65 Unidades 4kg)",
+  preco: 220.00, // Valor fictício, ajuste conforme seu preço real
   imagem: "https://res.cloudinary.com/daxnmbaov/image/upload/v1776646034/Gemini_Generated_Image_k7s2xpk7s2xpk7s2_faxnyf.png",
   quantitens: 65,
   itens: [
@@ -235,20 +235,20 @@ export const cestasprontas = [
 
 {
   id: 14,
-  nome: "Cesta Mesa Farta (71 Und. 5kg)",
-  preco: 289.90, // Valor fictício, ajuste conforme seu preço real
+  nome: "Cesta Mesa Farta (70 Unidades 5kg)",
+  preco: 255.00, // Valor fictício, ajuste conforme seu preço real
   imagem: "https://res.cloudinary.com/daxnmbaov/image/upload/v1776646410/Gemini_Generated_Image_xelll9xelll9xell_bdk1mg.png",
   quantitens: 65,
   itens: [
   
-    "1 esponja de aço 44g"
+   
   ],
 },
 
 {
     id: 9,
-    nome: "Cesta de (65 und. 5kg )",
-    preco: 69.90,
+    nome: "Cesta de (65 Unidades 5kg )",
+    preco: 245.00,
     imagem: "https://res.cloudinary.com/daxnmbaov/image/upload/v1776280243/Gemini_Generated_Image_k97xg9k97xg9k97x_h19smz.png",
     quantitens: 16,
     itens: [
@@ -259,8 +259,8 @@ export const cestasprontas = [
 
   {
     id: 10,
-    nome: "Cesta de (73 und. 6kg )",
-    preco: 69.90,
+    nome: "Cesta de (72 Unidades 6kg )",
+    preco: 275.00,
     imagem: "https://res.cloudinary.com/daxnmbaov/image/upload/v1776643618/Gemini_Generated_Image_ws8u0yws8u0yws8u_hk4fka.png",
     quantitens: 16,
     itens: [
@@ -271,8 +271,8 @@ export const cestasprontas = [
 
     {
     id: 11,
-    nome: "Cesta de (73 und. 7kg )",
-    preco: 69.90,
+    nome: "Cesta de (72 Unidades 7kg )",
+    preco: 285.00,
     imagem: "https://res.cloudinary.com/daxnmbaov/image/upload/v1776640344/Gemini_Generated_Image_8swc9j8swc9j8swc_pwggpw.png",
     quantitens: 16,
     itens: [
@@ -283,8 +283,8 @@ export const cestasprontas = [
 
       {
     id: 12,
-    nome: "Cesta de (94 und. 8kg )",
-    preco: 69.90,
+    nome: "Cesta de (93 Unidades 8kg )",
+    preco: 325.00,
     imagem: "https://res.cloudinary.com/daxnmbaov/image/upload/v1776640856/Gemini_Generated_Image_oa22ygoa22ygoa22_i5iq1y.png",
     quantitens: 16,
     itens: [
@@ -295,8 +295,8 @@ export const cestasprontas = [
 
         {
     id: 13,
-    nome: "Cesta de (100 und. 8kg )",
-    preco: 69.90,
+    nome: "Cesta de (99 Unidades 8kg )",
+    preco: 390.00,
     imagem: "https://res.cloudinary.com/daxnmbaov/image/upload/v1776641116/Gemini_Generated_Image_xfbdetxfbdetxfbd_agnwy7.png",
     quantitens: 16,
     itens: [
@@ -304,35 +304,83 @@ export const cestasprontas = [
       
     ],
   },
-  
-  
+   {
+    id: 16,
+    nome: "Cesta de (86 Unidades 7kg )",
+    preco: 315.00,
+    imagem: "https://res.cloudinary.com/daxnmbaov/image/upload/v1776856412/c10_ypw9jm.png",
+    quantitens: 16,
+    itens: [
+      "1 Feijão kg",
+      
+    ],
+  },
+   {
+    id: 15,
+    nome: "Cesta de (106 Unidades 11kg )",
+    preco: 370.00,
+    imagem: "https://res.cloudinary.com/daxnmbaov/image/upload/v1776856619/c11_s5929p.png",
+    quantitens: 16,
+    itens: [
+      "1 Feijão kg",
+      
+    ],
+  },
 
 
 ];
 
 export const itensIndividuais = [
-  { id: 101, nome: "Arroz branco 5kg", preco: 22.9 },
-  { id: 102, nome: "Feijão carioca 1kg", preco: 8.9 },
-  { id: 103, nome: "Feijão preto 1kg", preco: 9.5 },
-  { id: 104, nome: "Açúcar refinado 2kg", preco: 7.9 },
-  { id: 105, nome: "Açúcar mascavo 1kg", preco: 11.9 },
-  { id: 106, nome: "Óleo de soja 900ml", preco: 6.9 },
-  { id: 107, nome: "Azeite de oliva extra virgem 500ml", preco: 29.9 },
-  { id: 108, nome: "Sal refinado 1kg", preco: 2.9 },
-  { id: 109, nome: "Macarrão espaguete 500g", preco: 4.5 },
-  { id: 110, nome: "Extrato de tomate 340g", preco: 3.9 },
-  { id: 111, nome: "Molho de tomate caseiro 340g", preco: 5.5 },
-  { id: 112, nome: "Farinha de trigo 1kg", preco: 5.9 },
-  { id: 113, nome: "Farinha de mandioca 500g", preco: 4.9 },
-  { id: 114, nome: "Leite em pó integral 400g", preco: 14.9 },
-  { id: 115, nome: "Café torrado e moído 250g", preco: 9.9 },
-  { id: 116, nome: "Biscoito cream cracker 400g", preco: 5.9 },
-  { id: 117, nome: "Sardinha em lata 125g", preco: 6.9 },
-  { id: 118, nome: "Atum em azeite 130g", preco: 7.9 },
-  { id: 119, nome: "Aveia em flocos 500g", preco: 8.9 },
-  { id: 120, nome: "Achocolatado em pó 400g", preco: 11.9 },
-  { id: 121, nome: "Amaciante 2L", preco: 9.9 },
-  { id: 122, nome: "Sabão em pó 1kg", preco: 12.9 },
-  { id: 123, nome: "Detergente neutro 500ml", preco: 2.9 },
-  { id: 124, nome: "Papel higiênico 4 rolos", preco: 6.9 },
+  { id: 1, nome: "AÇUCAR CRISTAL 1KG", preco: 3.90 },
+  { id: 2, nome: "ARROZ BRANCO 1K", preco: 5.66 },
+  { id: 3, nome: "ARROZ BARB. POP 1KG", preco: 4.67 },
+  { id: 4, nome: "ARROZ PARB. EMOÇÕES 1KG", preco: 5.66 },
+  { id: 5, nome: "BISCOITO TRELOSO 74G", preco: 1.76 },
+  { id: 6, nome: "BOLACHA PILAR PREMIUM 350G", preco: 5.40 },
+  { id: 7, nome: "BOLACHA PILAR / MARILAN TRAD.", preco: 4.73 },
+  { id: 8, nome: "CAFÉ ST CLARA 100g", preco: 8.10 },
+  { id: 9, nome: "CAFÉ ST CARA 250g", preco: 18.90 },
+  { id: 10, nome: "CAFE SOLUVEL 40G", preco: 6.47 },
+  { id: 11, nome: "CHARQUE DT 400", preco: 27.00 },
+  { id: 12, nome: "CHARQUE PA 400", preco: 23.61 },
+  { id: 13, nome: "COLORAU SEMPRE VIVA 100G", preco: 1.35 },
+  { id: 14, nome: "DOCE GOIABADA 250G", preco: 2.84 },
+  { id: 15, nome: "FARINHA DE MANDIOCA 1KG", preco: 6.08 },
+  { id: 16, nome: "FEIJAO CARIOCA TURQUESA 1K", preco: 10.26 },
+  { id: 17, nome: "FEIJAO MACASSAR 1KG", preco: 8.51 },
+  { id: 18, nome: "FEIJAO PRETO CRISTAL 1KG", preco: 7.65 },
+  { id: 19, nome: "FLOCAO 400G", preco: 1.35 },
+  { id: 20, nome: "FLOCAO NORDESTINO 500G", preco: 1.80 },
+  { id: 21, nome: "KITUT BOVINO 320G", preco: 9.67 },
+  { id: 22, nome: "LEITE CAMPONESA INT. 200G", preco: 8.91 },
+  { id: 23, nome: "LEITE COMPOSTO 200G", preco: 4.91 },
+  { id: 24, nome: "LEITE INTEGRAL 200G", preco: 7.56 },
+  { id: 25, nome: "MACARRAO BOM SABOR 400G", preco: 2.70 },
+  { id: 26, nome: "MACARRAO VITARELA 400G", preco: 3.24 },
+  { id: 27, nome: "MARGARINA DELINE 250G", preco: 3.71 },
+  { id: 28, nome: "MAC. INST. VITARELA 85G", preco: 1.55 },
+  { id: 29, nome: "MOLHO DE TOMATE 300G", preco: 1.82 },
+  { id: 30, nome: "MORTADELA MISTA NATTO 400G", preco: 4.59 },
+  { id: 31, nome: "OLEO SOJA 500ML", preco: 7.02 },
+  { id: 32, nome: "OLEO SOJA 900ML", preco: 10.40 },
+  { id: 33, nome: "BAND. OVOS C/ 15UND.", preco: 11.48 },
+  { id: 34, nome: "REFRESCO", preco: 0.81 },
+  { id: 35, nome: "REFRIGERANTE INDAI 2L", preco: 5.18 },
+  { id: 36, nome: "SAL FINO 1KG", preco: 0.88 },
+  { id: 37, nome: "SARDINHA ROBSON 125G", preco: 5.93 },
+  { id: 38, nome: "TEMPERO S. VIVA 100G", preco: 1.35 },
+  { id: 39, nome: "VINAGRE DE ALCOOL 500ML", preco: 1.35 },
+  { id: 40, nome: "PAPEL FRORAL 4R", preco: 4.89 },
+  { id: 41, nome: "AGUA SANITARIA 1L", preco: 2.28 },
+  { id: 42, nome: "AMACIANTE SONHO 500ML", preco: 3.85 },
+  { id: 43, nome: "ASSOLAN 44G", preco: 1.62 },
+  { id: 44, nome: "CREME DENTAL EVEN 70G", preco: 2.23 },
+  { id: 45, nome: "DETERGENTE LIQ 500ML", preco: 1.76 },
+  { id: 46, nome: "DETERGENTE PO 500G", preco: 3.25 },
+  { id: 47, nome: "PAPEL NOVO 4R", preco: 3.11 },
+  { id: 48, nome: "SABAO BARRA BEM TI VE 180G", preco: 2.01 },
+  { id: 49, nome: "SABONETE FLOR DO YPÊ 90G", preco: 1.96 },
+  { id: 50, nome: "FILÉ DE PEITO BDJ 1KG", preco: 25.64 },
+  { id: 51, nome: "SOBRECOXA BDJ 1KG", preco: 17.42 },
+  { id: 52, nome: "CEVADA PÓ 500ML", preco: 8.10 }
 ];

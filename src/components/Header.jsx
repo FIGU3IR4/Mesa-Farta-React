@@ -15,21 +15,11 @@ export default function Header() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-16">
           <a href="#" className="flex items-center gap-2 group">
-            <div className="w-9 h-9 bg-green-600 rounded-full overflow-hidden flex items-center justify-center shadow-md group-hover:bg-green-700 transition-colors">
-  <img 
-    src="https://res.cloudinary.com/daxnmbaov/image/upload/v1776264183/Logo_Cestao_sa12ac.jpg" 
-    alt="" 
-    className="w-full h-full object-cover"
-  />
-</div>
-            <div className="leading-tight">
-              <span className="block font-bold text-green-800 text-base tracking-tight">
-                Cestão Mesa farta
-              </span>
-              <span className="block text-xs text-green-500 font-medium -mt-0.5">
-                Nutrição com carinho
-              </span>
-            </div>
+<img 
+  src="https://res.cloudinary.com/daxnmbaov/image/upload/v1776855698/Logo_cestao_off_c_r3cftk.png" 
+  alt="Logo Cestão Mesa Farta" 
+  className="h-12 w-auto object-contain"
+/>
           </a>
 
           <nav className="hidden md:flex items-center gap-1">

@@ -129,44 +129,24 @@ export default function About() {
           </div>
         </div>
 
-        <div className="mb-14">
-          <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">Nossa Estrutura</h3>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            {estrutura.map((foto, i) => (
-              <div key={i} className="rounded-2xl overflow-hidden group shadow-sm">
-                <div className="relative h-48 overflow-hidden">
-                  <img
-                    src={foto.imagem}
-                    alt={foto.legenda}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-3">
-                    <p className="text-white text-xs font-medium">{foto.legenda}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <div>
-          <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">Nosso Time</h3>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-            {equipe.map((pessoa, i) => (
-              <div key={i} className="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm text-center">
-                <div className="h-48 overflow-hidden">
-                  <img
-                    src={pessoa.imagem}
-                    alt={pessoa.nome}
-                    className="w-full h-full object-cover object-top"
-                  />
-                </div>
-                <div className="p-4">
-                  <p className="font-bold text-gray-800">{pessoa.nome}</p>
-                  <p className="text-green-600 text-sm font-medium">{pessoa.cargo}</p>
-                </div>
-              </div>
-            ))}
+<div className="flex flex-col items-center justify-center mb-14">
+          <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">Nosso Fundador</h3>
+          
+          {/* w-80 define uma largura menor e mais controlada, max-w-full garante que não quebre em celulares */}
+          <div className="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm text-center w-80 max-w-full group">
+            
+            {/* h-[26rem] reduz a altura, mas continua com aspecto vertical (retrato) */}
+            <div className="h-[26rem] overflow-hidden">
+              <img
+                src="https://res.cloudinary.com/daxnmbaov/image/upload/v1776854381/WhatsApp_Image_2026-04-20_at_17.14.03_wybjwf.jpg" 
+                alt="Nome do Dono"
+                className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+            <div className="p-5 bg-white relative z-10">
+              <p className="font-bold text-gray-800 text-xl">Eladio Gomes</p>
+              <p className="text-green-600 text-base font-medium mt-1">Fundador / Proprietário</p>
+            </div>
           </div>
         </div>
       </div>

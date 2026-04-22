@@ -22,7 +22,7 @@ function CestaCard({ cesta }) {
         <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none" />
         <div className="absolute bottom-3 left-3">
           <span className="bg-white/95 text-green-700 font-bold text-xs px-3 py-1 rounded-full shadow-sm">
-            {cesta.quantitens} itens inclusos
+            {cesta.quantitens} Unidades incluso
           </span>
         </div>
       </div>
