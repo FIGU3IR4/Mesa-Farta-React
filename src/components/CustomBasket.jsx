@@ -79,6 +79,11 @@ export default function CustomBasket() {
   const total = calcularTotalPersonalizado();
   const temItens = totalItens > 0;
 
+  // Lógica do valor mínimo adicionada aqui
+  const VALOR_MINIMO = 255;
+  const podeFinalizar = total >= VALOR_MINIMO;
+  const valorFaltante = VALOR_MINIMO - total;
+
   return (
     <section id="monte-sua-cesta" className="py-20 bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -91,7 +96,7 @@ export default function CustomBasket() {
           </h2>
           <p className="text-gray-500 text-lg max-w-xl mx-auto">
             Selecione os produtos que você precisa e nós montamos a cesta
-            personalizada para você.
+            personalizada para você. O valor mínimo é de R$ 255,00.
           </p>
         </div>
 
@@ -147,13 +152,12 @@ export default function CustomBasket() {
                 <div className="border-t border-white/20 pt-4 mb-5">
                   <div className="flex justify-between items-center mb-1">
                     <span className="text-green-200 text-sm">
-                      {totalItens} item{totalItens !== 1 ? "s" : ""} selecionado
-                      {totalItens !== 1 ? "s" : ""}
+                      {totalItens} item{totalItens !== 1 ? "s" : ""} selecionado{totalItens !== 1 ? "s" : ""}
                     </span>
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="text-green-100 font-semibold">
-                      Valor Total Previsto:
+                      Valor Total:
                     </span>
                     <span className="text-2xl font-extrabold text-white blur-sm select-none">
                       R${" "}
@@ -164,12 +168,21 @@ export default function CustomBasket() {
                   </div>
                 </div>
 
+                {/* Aviso de valor mínimo faltando */}
+                {temItens && !podeFinalizar && (
+                  <div className="bg-orange-500/20 border border-orange-500/30 rounded-lg p-3 mb-4 text-center">
+                    <p className="text-orange-100 text-sm">
+                      Faltam <strong>R$ {valorFaltante.toLocaleString("pt-BR", { minimumFractionDigits: 2 })}</strong> para o pedido mínimo de R$ 255,00.
+                    </p>
+                  </div>
+                )}
+
                 <button
                   onClick={abrirCheckoutPersonalizada}
-                  disabled={!temItens}
-                  className="w-full py-3.5 bg-orange-500 hover:bg-orange-400 disabled:bg-white/20 disabled:cursor-not-allowed text-white font-bold rounded-xl transition-all active:scale-95 mb-2"
+                  disabled={!podeFinalizar}
+                  className="w-full py-3.5 bg-orange-500 hover:bg-orange-400 disabled:bg-white/20 disabled:text-white/60 disabled:cursor-not-allowed text-white font-bold rounded-xl transition-all active:scale-95 mb-2"
                 >
-                  Finalizar minha cesta
+                  {podeFinalizar ? "Finalizar minha cesta" : "Valor mínimo não atingido"}
                 </button>
 
                 {temItens && (

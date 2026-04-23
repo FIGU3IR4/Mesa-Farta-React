@@ -4,7 +4,7 @@ export const cestasprontas = [
     id: 1,
     nome: "Cesta Econômica (16 Unidades - 1Kg)",
     preco: 55.00,
-    imagem: "https://res.cloudinary.com/daxnmbaov/image/upload/v1776642477/Gemini_Generated_Image_ohwmohwmohwmohwm_ihvwd3.png",
+    imagem: "https://res.cloudinary.com/daxnmbaov/image/upload/v1776642435/Gemini_Generated_Image_flo4ndflo4ndflo4_fjk8rj.png",
     quantitens: 16,
     itens: [
       "1 Feijão kg",
@@ -22,11 +22,13 @@ export const cestasprontas = [
       "4 Rolos Papel Higiênico"
     ],
   },
+
+
   {
     id: 2,
     nome: "Cesta Padrão (18 Unidades - 1Kg) ",
     preco: 65.00,
-    imagem: "https://res.cloudinary.com/daxnmbaov/image/upload/v1776642435/Gemini_Generated_Image_flo4ndflo4ndflo4_fjk8rj.png",
+    imagem: "https://res.cloudinary.com/daxnmbaov/image/upload/v1776642477/Gemini_Generated_Image_ohwmohwmohwmohwm_ihvwd3.png",
     quantitens: 18,
     itens: [
       "1 Feijão kg",
@@ -136,7 +138,7 @@ export const cestasprontas = [
     "4 macarrão 500g",
     "3 açucar kg",
     "3 feijão carioca kg",
-    "2 biscoitos 37g",
+    "2 biscoitos 74g",
     "1 mortadela 500g",
     "1 farinha kg",
     "1 óleo 900ml",
@@ -162,7 +164,7 @@ export const cestasprontas = [
   id: 7,
   nome: "Cesta Mesa Farta (59 Unidades. 4kg)",
   preco: 200.00, // Valor fictício, ajuste conforme seu preço real
-  imagem: "https://res.cloudinary.com/daxnmbaov/image/upload/v1776646034/Gemini_Generated_Image_k7s2xpk7s2xpk7s2_faxnyf.png",
+  imagem: "https://res.cloudinary.com/daxnmbaov/image/upload/v1776944365/c13_ajwemr.png",
   quantitens: 59,
   itens: [
     "15 und. ovos",
@@ -171,14 +173,14 @@ export const cestasprontas = [
     "4 açucar kg",
     "4 macarrão 500g",
     "4 flocão de milho 500g",
-    "2 biscoitos 37g",
+    "2 biscoitos 74g",
     "1 farinha kg",
     "1 óleo 900ml",
     "1 refrigerante 2l",
     "1 cream cracker 400g",
     "1 café 100g",
     "1 leite int. 200g",
-    "1 charque 500g",
+    "1 charque 400g",
     "1 margarina 250g",
     "1 sal kg",
     "1 miojo 85g",
@@ -197,7 +199,7 @@ export const cestasprontas = [
   id: 8,
   nome: "Cesta Mesa Farta (65 Unidades 4kg)",
   preco: 220.00, // Valor fictício, ajuste conforme seu preço real
-  imagem: "https://res.cloudinary.com/daxnmbaov/image/upload/v1776646034/Gemini_Generated_Image_k7s2xpk7s2xpk7s2_faxnyf.png",
+  imagem: "https://res.cloudinary.com/daxnmbaov/image/upload/v1776944111/c12_byxjtf.png",
   quantitens: 65,
   itens: [
     "15 und. ovos",
@@ -206,12 +208,12 @@ export const cestasprontas = [
     "4 macarrao 400g",
     "4 feijao carioca kg",
     "4 flocão 500g",
-    "2 biscoito 60g",
+    "2 biscoito 74g",
     "1 mortadela 400g",
     "1 oleo 900ml",
     "1 sal kg",
     "1 farinha kg",
-    "1 charque 500g",
+    "1 charque 400g",
     "1 margarina 250g",
     "1 café 100g",
     "1 leite 200g",
@@ -227,7 +229,7 @@ export const cestasprontas = [
     "1 creme dental 70g",
     "1 agua sanitaria 1l",
     "1 amaciante de roupa 500ml",
-    "1 sabao em pó 500g",
+    "1 sabao em pó 400g",
     "1 detergente 500ml",
     "1 esponja de aço 44g"
   ],
@@ -252,7 +254,7 @@ export const cestasprontas = [
     imagem: "https://res.cloudinary.com/daxnmbaov/image/upload/v1776280243/Gemini_Generated_Image_k97xg9k97xg9k97x_h19smz.png",
     quantitens: 16,
     itens: [
-      "1 Feijão kg",
+      
       
     ],
   },
@@ -264,7 +266,7 @@ export const cestasprontas = [
     imagem: "https://res.cloudinary.com/daxnmbaov/image/upload/v1776643618/Gemini_Generated_Image_ws8u0yws8u0yws8u_hk4fka.png",
     quantitens: 16,
     itens: [
-      "1 Feijão kg",
+      
       
     ],
   },
@@ -276,7 +278,7 @@ export const cestasprontas = [
     imagem: "https://res.cloudinary.com/daxnmbaov/image/upload/v1776640344/Gemini_Generated_Image_8swc9j8swc9j8swc_pwggpw.png",
     quantitens: 16,
     itens: [
-      "1 Feijão kg",
+      
       
     ],
   },
@@ -288,7 +290,7 @@ export const cestasprontas = [
     imagem: "https://res.cloudinary.com/daxnmbaov/image/upload/v1776640856/Gemini_Generated_Image_oa22ygoa22ygoa22_i5iq1y.png",
     quantitens: 16,
     itens: [
-      "1 Feijão kg",
+      
       
     ],
   },
@@ -300,7 +302,7 @@ export const cestasprontas = [
     imagem: "https://res.cloudinary.com/daxnmbaov/image/upload/v1776641116/Gemini_Generated_Image_xfbdetxfbdetxfbd_agnwy7.png",
     quantitens: 16,
     itens: [
-      "1 Feijão kg",
+      
       
     ],
   },
@@ -311,7 +313,6 @@ export const cestasprontas = [
     imagem: "https://res.cloudinary.com/daxnmbaov/image/upload/v1776856412/c10_ypw9jm.png",
     quantitens: 16,
     itens: [
-      "1 Feijão kg",
       
     ],
   },
@@ -322,7 +323,6 @@ export const cestasprontas = [
     imagem: "https://res.cloudinary.com/daxnmbaov/image/upload/v1776856619/c11_s5929p.png",
     quantitens: 16,
     itens: [
-      "1 Feijão kg",
       
     ],
   },
@@ -341,8 +341,8 @@ export const itensIndividuais = [
   { id: 8, nome: "CAFÉ ST CLARA 100g", preco: 8.10 },
   { id: 9, nome: "CAFÉ ST CARA 250g", preco: 18.90 },
   { id: 10, nome: "CAFE SOLUVEL 40G", preco: 6.47 },
-  { id: 11, nome: "CHARQUE DT 400", preco: 27.00 },
-  { id: 12, nome: "CHARQUE PA 400", preco: 23.61 },
+  { id: 11, nome: "CHARQUE DT 400g", preco: 27.00 },
+  { id: 12, nome: "CHARQUE PA 400g", preco: 23.61 },
   { id: 13, nome: "COLORAU SEMPRE VIVA 100G", preco: 1.35 },
   { id: 14, nome: "DOCE GOIABADA 250G", preco: 2.84 },
   { id: 15, nome: "FARINHA DE MANDIOCA 1KG", preco: 6.08 },
