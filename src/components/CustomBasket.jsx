@@ -80,7 +80,7 @@ export default function CustomBasket() {
   const temItens = totalItens > 0;
 
   // Lógica do valor mínimo adicionada aqui
-  const VALOR_MINIMO = 255;
+  const VALOR_MINIMO = 200;
   const podeFinalizar = total >= VALOR_MINIMO;
   const valorFaltante = VALOR_MINIMO - total;
 
@@ -96,7 +96,7 @@ export default function CustomBasket() {
           </h2>
           <p className="text-gray-500 text-lg max-w-xl mx-auto">
             Selecione os produtos que você precisa e nós montamos a cesta
-            personalizada para você. O valor mínimo é de R$ 255,00.
+            personalizada para você. O valor mínimo é de R$ 200,00.
           </p>
         </div>
 
@@ -172,7 +172,7 @@ export default function CustomBasket() {
                 {temItens && !podeFinalizar && (
                   <div className="bg-orange-500/20 border border-orange-500/30 rounded-lg p-3 mb-4 text-center">
                     <p className="text-orange-100 text-sm">
-                      Faltam <strong>R$ {valorFaltante.toLocaleString("pt-BR", { minimumFractionDigits: 2 })}</strong> para o pedido mínimo de R$ 255,00.
+                      Faltam <strong>R$ {valorFaltante.toLocaleString("pt-BR", { minimumFractionDigits: 2 })}</strong> para o pedido mínimo de R$ 200,00.
                     </p>
                   </div>
                 )}
