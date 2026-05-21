@@ -198,7 +198,7 @@ export const cestasprontas = [
 {
   id: 8,
   nome: "Cesta Mesa Farta (65 Unidades 4kg)",
-  preco: 220.00, // Valor fictício, ajuste conforme seu preço real
+  preco: 225.00, // Valor fictício, ajuste conforme seu preço real
   imagem: "https://res.cloudinary.com/daxnmbaov/image/upload/v1776944111/c12_byxjtf.png",
   quantitens: 65,
   itens: [
@@ -238,7 +238,7 @@ export const cestasprontas = [
 {
   id: 14,
   nome: "Cesta Mesa Farta (71 Unidades 5kg)",
-  preco: 255.00, // Valor fictício, ajuste conforme seu preço real
+  preco: 260.00, // Valor fictício, ajuste conforme seu preço real
   imagem: "https://res.cloudinary.com/daxnmbaov/image/upload/v1776646410/Gemini_Generated_Image_xelll9xelll9xell_bdk1mg.png",
   quantitens: 71,
   itens: [
@@ -280,7 +280,7 @@ export const cestasprontas = [
 {
     id: 9,
     nome: "Cesta de (65 Unidades 5kg )",
-    preco: 245.00,
+    preco: 250.00,
     imagem: "https://res.cloudinary.com/daxnmbaov/image/upload/v1776280243/Gemini_Generated_Image_k97xg9k97xg9k97x_h19smz.png",
     quantitens: 65,
     itens: [
@@ -318,7 +318,7 @@ export const cestasprontas = [
   {
     id: 10,
     nome: "Cesta de (73 Unidades 6kg )",
-    preco: 275.00,
+    preco: 285.00,
     imagem: "https://res.cloudinary.com/daxnmbaov/image/upload/v1776643618/Gemini_Generated_Image_ws8u0yws8u0yws8u_hk4fka.png",
     quantitens: 73,
     itens: [
@@ -359,7 +359,7 @@ export const cestasprontas = [
     {
     id: 11,
     nome: "Cesta de (73 Unidades 7kg )",
-    preco: 285.00,
+    preco: 290.00,
     imagem: "https://res.cloudinary.com/daxnmbaov/image/upload/v1776640344/Gemini_Generated_Image_8swc9j8swc9j8swc_pwggpw.png",
     quantitens: 73,
     itens: [
@@ -518,6 +518,45 @@ export const cestasprontas = [
       
     ],
   },
+
+   {
+    id: 16,
+    nome: "Cesta de (102 Unidades 10kg )",
+    preco: 360.00,
+    imagem: "https://res.cloudinary.com/daxnmbaov/image/upload/v1779369255/cesta10k_tpzits.png",
+    quantitens: 102,
+    itens: [
+      "30 ovos und",
+  "10 arroz kg",
+  "10 açucar kg",
+  "10 macarrao 400g",
+  "10 flocao 500g",
+  "6 feijao carioca kg",
+  "2 oleo 900ml",
+  "1 cream cracker",
+  "1 vinagre 500ml",
+  "1 sal kg",
+  "1 farinha kg",
+  "1 charque 400g",
+  "1 margarina 250g",
+  "1 café 250g",
+  "1 leite 200g",
+  "1 refrigerante 2l",
+  "1 mortadela 400g",
+  "2 molho tomate 300g",
+  "4 (rl) papel higienico",
+  "2 und. sabao barra 180g",
+  "1 und. esponja de aço",
+  "1 und. creme dental 70g",
+  "1 und. sabonete 90g",
+  "1 und. detergente 500ml",
+  "1 und. agua sanitaria 1l",
+  "1 und. deterg. em pó 400g"
+
+
+      
+    ],
+  },
    {
     id: 15,
     nome: "Cesta de (106 Unidades 11kg )",
@@ -557,6 +596,7 @@ export const cestasprontas = [
       
     ],
   },
+  
 
 
 ];
