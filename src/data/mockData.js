@@ -318,7 +318,7 @@ export const cestasprontas = [
   {
     id: 10,
     nome: "Cesta de (73 Unidades 6kg )",
-    preco: 285.00,
+    preco: 280.00,
     imagem: "https://res.cloudinary.com/daxnmbaov/image/upload/v1776643618/Gemini_Generated_Image_ws8u0yws8u0yws8u_hk4fka.png",
     quantitens: 73,
     itens: [
