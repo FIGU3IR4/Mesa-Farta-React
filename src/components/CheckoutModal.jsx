@@ -26,6 +26,18 @@ export default function CheckoutModal() {
     ? cestaSelecionada?.preco
     : calcularTotalPersonalizado();
 
+  // Função que dispara a conversão do Google Ads
+  function dispararConversaoGoogleAds(valorPedido) {
+    if (typeof window !== "undefined" && typeof window.gtag === "function") {
+      window.gtag("event", "conversion", {
+        send_to: "AW-18127736478/qWSACJuG17ccEJ6d_cND",
+        value: valorPedido || 1.0, // Envia o valor real do carrinho (ou 1.0 como fallback)
+        currency: "BRL",
+        transaction_id: "", // Se tiver um ID único de pedido, pode passar aqui
+      });
+    }
+  }
+
   function handleChange(e) {
     const { name, value } = e.target;
     setForm((prev) => ({ ...prev, [name]: value }));
@@ -75,9 +87,15 @@ export default function CheckoutModal() {
 
   function handleSubmit() {
     if (!validar()) return;
+    
+    // 1. Dispara a conversão passando o valor real do pedido
+    dispararConversaoGoogleAds(total);
+
+    // 2. Prossegue com o fluxo normal do WhatsApp
     const mensagem = montarMensagem();
     const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(mensagem)}`;
     window.open(url, "_blank");
+    
     fecharModal();
     setForm(initialForm);
     if (!isPronta) limparCestaPersonalizada();

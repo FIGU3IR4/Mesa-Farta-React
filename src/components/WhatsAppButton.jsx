@@ -2,18 +2,32 @@ import React from 'react';
 
 export default function WhatsAppButton() {
   // Substitua pelo número do seu WhatsApp (com código do país + DDD, sem espaços ou traços)
-  const phoneNumber = "5511999999999"; 
+  const phoneNumber = "5581987731779"; 
   
   // Mensagem opcional que já vem preenchida quando o cliente clica
   const message = "Olá! Gostaria de tirar uma dúvida sobre os produtos."; 
 
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
+  // Função que dispara a conversão do Google Ads
+  const handleConversion = () => {
+    // Verifica se o gtag está disponível globalmente na janela (evita erros se o script do Google não tiver carregado)
+    if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
+      window.gtag('event', 'conversion', {
+        'send_to': 'AW-18127736478/qWSACJuG17ccEJ6d_cND',
+        'value': 1.0,
+        'currency': 'BRL',
+        'transaction_id': ''
+      });
+    }
+  };
+
   return (
     <a
       href={whatsappUrl}
       target="_blank"
       rel="noopener noreferrer"
+      onClick={handleConversion}
       className="fixed bottom-6 right-6 z-50 flex items-center justify-center p-4 bg-[#25D366] text-white rounded-full shadow-lg hover:bg-[#128C7E] hover:-translate-y-1 transition-all duration-300"
       aria-label="Falar conosco no WhatsApp"
     >
