@@ -1,4 +1,5 @@
 import { ArrowDown, Truck, ShieldCheck, Heart } from "lucide-react";
+import imagemdestaque from "../data/imgs/imagemdestaque.jpeg"
 
 export default function Hero() {
   return (
@@ -66,7 +67,7 @@ export default function Hero() {
           <div className="hidden md:block relative">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white/20">
               <img
-                src="https://res.cloudinary.com/daxnmbaov/image/upload/v1776854353/imagemdestauqe_mdgtzb.jpg"
+                src={imagemdestaque}
                 alt="Cesta básica repleta de alimentos"
                 className="w-full h-98 object-cover"
               />

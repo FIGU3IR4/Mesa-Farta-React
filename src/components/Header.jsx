@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { ShoppingBasket, Menu, X } from "lucide-react";
+import logo from "../data/imgs/logo.png"
+
 
 export default function Header() {
   const [menuAberto, setMenuAberto] = useState(false);
@@ -13,13 +15,15 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-green-100 shadow-sm">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="flex items-center justify-between h-16">
+        {/* Aumentado de h-16 para h-20 para dar espaço à logo maior */}
+        <div className="flex items-center justify-between h-20">
           <a href="#" className="flex items-center gap-2 group">
-<img 
-  src="https://res.cloudinary.com/daxnmbaov/image/upload/v1776855698/Logo_cestao_off_c_r3cftk.png" 
-  alt="Logo Cestão Mesa Farta" 
-  className="h-12 w-auto object-contain"
-/>
+            <img 
+              src={logo} 
+              alt="Logo Cestão Mesa Farta" 
+              
+              className="h-16 w-auto object-contain"
+            />
           </a>
 
           <nav className="hidden md:flex items-center gap-1">
