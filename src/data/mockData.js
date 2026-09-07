@@ -397,7 +397,7 @@ export const cestasprontas = [
       {
     id: 12,
     nome: "Cesta de (94 Unidades 8kg )",
-    preco: 325.00,
+    preco: 330.00,  //feito
     imagem: "https://res.cloudinary.com/daxnmbaov/image/upload/v1776640856/Gemini_Generated_Image_oa22ygoa22ygoa22_i5iq1y.png",
     quantitens: 94,
     itens: [
@@ -434,7 +434,7 @@ export const cestasprontas = [
         {
     id: 13,
     nome: "Cesta de (100 Unidades 8kg )",
-    preco: 390.00,
+    preco: 399.00,
     imagem: "https://res.cloudinary.com/daxnmbaov/image/upload/v1776641116/Gemini_Generated_Image_xfbdetxfbdetxfbd_agnwy7.png",
     quantitens: 100,
     itens: [
@@ -475,7 +475,7 @@ export const cestasprontas = [
    {
     id: 16,
     nome: "Cesta de (87 Unidades 7kg )",
-    preco: 315.00,
+    preco: 320.00, //feito
     imagem: "https://res.cloudinary.com/daxnmbaov/image/upload/v1776856412/c10_ypw9jm.png",
     quantitens: 87,
     itens: [
@@ -522,7 +522,7 @@ export const cestasprontas = [
    {
     id: 16,
     nome: "Cesta de (102 Unidades 10kg )",
-    preco: 360.00,
+    preco: 370.00, //feito
     imagem: "https://res.cloudinary.com/daxnmbaov/image/upload/v1779369255/cesta10k_tpzits.png",
     quantitens: 102,
     itens: [
@@ -560,7 +560,7 @@ export const cestasprontas = [
    {
     id: 15,
     nome: "Cesta de (106 Unidades 11kg )",
-    preco: 370.00,
+    preco: 380.00, //feito
     imagem: "https://res.cloudinary.com/daxnmbaov/image/upload/v1776856619/c11_s5929p.png",
     quantitens: 106,
     itens: [
