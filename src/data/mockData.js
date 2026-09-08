@@ -1,9 +1,10 @@
 import cb55 from "../data/imgs/cb55.jpeg";
 import cb65 from "../data/imgs/cb65.jpeg";
 import cb90 from "../data/imgs/cb90.jpeg";
+import cb120 from "../data/imgs/cb120.png";
 import cb130 from "../data/imgs/cb130.png";
 import cb185 from "../data/imgs/cb185.jpeg";
-import cb200 from "../data/imgs/cb200.jpeg";
+import cb200 from "../data/imgs/cb200.png";
 import cb220 from "../data/imgs/cb220.jpeg";
 import cb225 from "../data/imgs/cb225.png";
 import cb250 from "../data/imgs/cb250.jpeg";
@@ -91,7 +92,7 @@ export const cestasprontas = [
     id: 4,
     nome: "Cesta Essencial (23 Unidades - 3kg)",
     preco: 120.00,
-    imagem: cb130,
+    imagem: cb120,
     quantitens: 23,
     itens: [
       "1 Feijão Macassa kg",
