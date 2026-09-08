@@ -1,4 +1,5 @@
 import { Target, Building2, User, Leaf, Clock, Star, Users } from "lucide-react";
+import owner from "../data/imgs/owner.jpeg"
 
 const beneficiosEmpresa = [
   { icon: Building2, texto: "Pedidos em grande volume com desconto especial" },
@@ -138,7 +139,7 @@ export default function About() {
             {/* h-[26rem] reduz a altura, mas continua com aspecto vertical (retrato) */}
             <div className="h-[26rem] overflow-hidden">
               <img
-                src="https://res.cloudinary.com/daxnmbaov/image/upload/v1776854381/WhatsApp_Image_2026-04-20_at_17.14.03_wybjwf.jpg" 
+                src={owner}
                 alt="Nome do Dono"
                 className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
               />
