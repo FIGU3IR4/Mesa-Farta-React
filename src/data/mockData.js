@@ -586,24 +586,24 @@ export const cestasprontas = [
 ];
 
 export const itensIndividuais = [
-  { id: 1, nome: "AÇUCAR CRISTAL 1KG", preco: 3.90 },
+  { id: 1, nome: "AÇUCAR CRISTAL 1KG", preco: 3.99 }, // Atualizado (3,99)
   { id: 2, nome: "ARROZ BRANCO 1K", preco: 5.66 },
-  { id: 3, nome: "ARROZ BARB. POP 1KG", preco: 4.67 },
-  { id: 4, nome: "ARROZ PARB. EMOÇÕES 1KG", preco: 5.66 },
+  { id: 3, nome: "ARROZ BARB. POP 1KG", preco: 4.99 }, // Atualizado (4,99)
+  { id: 4, nome: "ARROZ PARB. EMOÇÕES 1KG", preco: 5.99 }, // Atualizado (5,99)
   { id: 5, nome: "BISCOITO TRELOSO 74G", preco: 1.76 },
   { id: 6, nome: "BOLACHA PILAR PREMIUM 350G", preco: 5.40 },
   { id: 7, nome: "BOLACHA PILAR / MARILAN TRAD.", preco: 4.73 },
   { id: 8, nome: "CAFÉ ST CLARA 100g", preco: 8.10 },
-  { id: 9, nome: "CAFÉ ST CARA 250g", preco: 18.90 },
+  { id: 9, nome: "CAFÉ ST CARA 250g", preco: 17.49 }, // Atualizado (17,49)
   { id: 10, nome: "CAFE SOLUVEL 40G", preco: 6.47 },
   { id: 11, nome: "CHARQUE DT 400g", preco: 27.00 },
   { id: 12, nome: "CHARQUE PA 400g", preco: 23.61 },
   { id: 13, nome: "COLORAU SEMPRE VIVA 100G", preco: 1.35 },
-  { id: 14, nome: "DOCE GOIABADA 250G", preco: 2.84 },
-  { id: 15, nome: "FARINHA DE MANDIOCA 1KG", preco: 6.08 },
+  { id: 14, nome: "DOCE GOIABADA 250G", preco: 2.99 }, // Atualizado (2,99)
+  { id: 15, nome: "FARINHA DE MANDIOCA 1KG", preco: 5.99 }, // Atualizado (5,99)
   { id: 16, nome: "FEIJAO CARIOCA TURQUESA 1K", preco: 10.26 },
   { id: 17, nome: "FEIJAO MACASSAR 1KG", preco: 8.51 },
-  { id: 18, nome: "FEIJAO PRETO CRISTAL 1KG", preco: 7.65 },
+  { id: 18, nome: "FEIJAO PRETO CRISTAL 1KG", preco: 7.99 }, // Atualizado (7,99)
   { id: 19, nome: "FLOCAO 400G", preco: 1.35 },
   { id: 20, nome: "FLOCAO NORDESTINO 500G", preco: 1.80 },
   { id: 21, nome: "KITUT BOVINO 320G", preco: 9.67 },
@@ -618,24 +618,24 @@ export const itensIndividuais = [
   { id: 30, nome: "MORTADELA MISTA NATTO 400G", preco: 4.59 },
   { id: 31, nome: "OLEO SOJA 500ML", preco: 7.02 },
   { id: 32, nome: "OLEO SOJA 900ML", preco: 10.40 },
-  { id: 33, nome: "BAND. OVOS C/ 15UND.", preco: 11.48 },
+  { id: 33, nome: "BAND. OVOS C/ 15UND.", preco: 10.50 }, // Atualizado (10,50)
   { id: 34, nome: "REFRESCO", preco: 0.81 },
   { id: 35, nome: "REFRIGERANTE INDAI 2L", preco: 5.18 },
-  { id: 36, nome: "SAL FINO 1KG", preco: 0.88 },
-  { id: 37, nome: "SARDINHA ROBSON 125G", preco: 5.93 },
+  { id: 36, nome: "SAL FINO 1KG", preco: 1.20 }, // Atualizado (1,20)
+  { id: 37, nome: "SARDINHA ROBSON 125G", preco: 5.99 }, // Atualizado (5,99)
   { id: 38, nome: "TEMPERO S. VIVA 100G", preco: 1.35 },
-  { id: 39, nome: "VINAGRE DE ALCOOL 500ML", preco: 1.35 },
-  { id: 40, nome: "PAPEL FRORAL 4R", preco: 4.89 },
+  { id: 39, nome: "VINAGRE DE ALCOOL 500ML", preco: 1.99 }, // Atualizado (1,99)
+  { id: 40, nome: "PAPEL FRORAL 4R", preco: 5.49 }, // Atualizado (5,49)
   { id: 41, nome: "AGUA SANITARIA 1L", preco: 2.28 },
   { id: 42, nome: "AMACIANTE SONHO 500ML", preco: 3.85 },
-  { id: 43, nome: "ASSOLAN 44G", preco: 1.62 },
-  { id: 44, nome: "CREME DENTAL EVEN 70G", preco: 2.23 },
-  { id: 45, nome: "DETERGENTE LIQ 500ML", preco: 1.76 },
-  { id: 46, nome: "DETERGENTE PO 500G", preco: 3.25 },
+  { id: 43, nome: "ASSOLAN 44G", preco: 1.89 }, // Atualizado (1,89)
+  { id: 44, nome: "CREME DENTAL EVEN 70G", preco: 2.49 }, // Atualizado (2,49)
+  { id: 45, nome: "DETERGENTE LIQ 500ML", preco: 1.99 }, // Atualizado (1,99)
+  { id: 46, nome: "DETERGENTE PO 500G", preco: 3.29 }, // Atualizado (3,29)
   { id: 47, nome: "PAPEL NOVO 4R", preco: 3.11 },
-  { id: 48, nome: "SABAO BARRA BEM TI VE 180G", preco: 2.01 },
-  { id: 49, nome: "SABONETE FLOR DO YPÊ 90G", preco: 1.96 },
-  { id: 50, nome: "FILÉ DE PEITO BDJ 1KG", preco: 25.64 },
-  { id: 51, nome: "SOBRECOXA BDJ 1KG", preco: 17.42 },
+  { id: 48, nome: "SABAO BARRA BEM TI VE 180G", preco: 1.99 }, // Atualizado (1,99)
+  { id: 49, nome: "SABONETE FLOR DO YPÊ 90G", preco: 1.99 }, // Atualizado (1,99)
+  { id: 50, nome: "FILÉ DE PEITO BDJ 1KG", preco: 24.99 }, // Atualizado (24,99)
+  { id: 51, nome: "SOBRECOXA BDJ 1KG", preco: 18.49 }, // Atualizado (18,49)
   { id: 52, nome: "CEVADA PÓ 500ML", preco: 8.10 }
 ];
