@@ -91,7 +91,7 @@ export const cestasprontas = [
   {
     id: 4,
     nome: "Cesta Essencial (23 Unidades - 3kg)",
-    preco: 120.00,
+    preco: 125.00,
     imagem: cb120,
     quantitens: 23,
     itens: [
@@ -115,7 +115,7 @@ export const cestasprontas = [
   {
     id: 5,
     nome: "Cesta Especial (45 Unidades - 3kg)",
-    preco: 130.00,
+    preco: 135.00,
     imagem: cb130,
     quantitens: 45,
     itens: [
