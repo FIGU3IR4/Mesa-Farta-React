@@ -15,7 +15,7 @@ import cb320 from "../data/imgs/cb320.png";
 import cb330 from "../data/imgs/cb330.png";
 import cb370 from "../data/imgs/cb370.png";
 import cb380 from "../data/imgs/cb380.png";
-import cb399 from "../data/imgs/cb399.jpeg";
+import cb399 from "../data/imgs/cb399.png";
 
 export const cestasprontas = [
   {
@@ -67,7 +67,7 @@ export const cestasprontas = [
   {
     id: 3,
     nome: "Cesta Família (23 Unidades - 2kg)",
-    preco: 90.00,
+    preco: 95.00,
     imagem: cb90,
     quantitens: 23,
     itens: [
@@ -143,7 +143,7 @@ export const cestasprontas = [
   {
     id: 6,
     nome: "Cestão Mesa Farta (60 Unidades.)",
-    preco: 185.00,
+    preco: 190.00,
     imagem: cb185,
     quantitens: 60,
     itens: [
@@ -178,7 +178,7 @@ export const cestasprontas = [
   {
     id: 7,
     nome: "Cesta Mesa Farta (59 Unidades. 4kg)",
-    preco: 200.00,
+    preco: 210.00,
     imagem: cb200,
     quantitens: 59,
     itens: [
@@ -252,7 +252,7 @@ export const cestasprontas = [
   {
     id: 14,
     nome: "Cesta Mesa Farta (71 Unidades 5kg)",
-    preco: 260.00,
+    preco: 270.00,
     imagem: cb260,
     quantitens: 71,
     itens: [
@@ -291,7 +291,7 @@ export const cestasprontas = [
   {
     id: 9,
     nome: "Cesta de (65 Unidades 5kg )",
-    preco: 250.00,
+    preco: 260.00,
     imagem: cb250,
     quantitens: 65,
     itens: [
@@ -326,7 +326,7 @@ export const cestasprontas = [
   {
     id: 10,
     nome: "Cesta de (73 Unidades 6kg )",
-    preco: 280.00,
+    preco: 285.00,
     imagem: cb280,
     quantitens: 73,
     itens: [
@@ -364,7 +364,7 @@ export const cestasprontas = [
   {
     id: 11,
     nome: "Cesta de (73 Unidades 7kg )",
-    preco: 290.00,
+    preco: 300.00,
     imagem: cb290,
     quantitens: 73,
     itens: [
@@ -399,7 +399,7 @@ export const cestasprontas = [
   {
     id: 12,
     nome: "Cesta de (94 Unidades 8kg )",
-    preco: 330.00,
+    preco: 340.00,
     imagem: cb330,
     quantitens: 94,
     itens: [
@@ -450,7 +450,8 @@ export const cestasprontas = [
       "1 vinagre 500ml",
       "1 sal kg",
       "1 farinha kg",
-      "3 charque 400g",
+      "2 charque 400g",
+      "2 Sardinhas",
       "1 margarina 250g",
       "2 café 250g",
       "2 leite 200g",
@@ -472,7 +473,7 @@ export const cestasprontas = [
   {
     id: 16,
     nome: "Cesta de (87 Unidades 7kg )",
-    preco: 320.00,
+    preco: 330.00,
     imagem: cb320,
     quantitens: 87,
     itens: [
@@ -551,7 +552,7 @@ export const cestasprontas = [
   {
     id: 15,
     nome: "Cesta de (106 Unidades 11kg )",
-    preco: 380.00,
+    preco: 390.00,
     imagem: cb380,
     quantitens: 106,
     itens: [
