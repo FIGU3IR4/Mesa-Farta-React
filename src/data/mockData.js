@@ -21,7 +21,7 @@ export const cestasprontas = [
   {
     id: 1,
     nome: "Cesta Econômica (16 Unidades - 1Kg)",
-    preco: 55.00,
+    preco: 57.00,
     imagem: cb55,
     quantitens: 16,
     itens: [
@@ -43,7 +43,7 @@ export const cestasprontas = [
   {
     id: 2,
     nome: "Cesta Padrão (18 Unidades - 1Kg)",
-    preco: 65.00,
+    preco: 67.00,
     imagem: cb65,
     quantitens: 18,
     itens: [
